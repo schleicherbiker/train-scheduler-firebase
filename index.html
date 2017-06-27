@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NYT Search</title>
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div class="container" style="background-color: red">
+        <!--Title-->
+        <div class="row">
+            <div id="title" class="text-center col-md-10 col-md-offset-1">
+                <span class="glyphicon glyphicon-search"></span>
+                New York Times Search
+            </div>
+        </div>
+
+        <!--Search Parameters-->
+        <div class="row">
+            <div id="parameters" class="col-md-8 col-md-offset-2">
+                <div id="parameterTitle">Search Parameters</div>
+                <h1 id="search">Search Term:</h1>
+                <form>
+                    <input class="col-md-12" type="text" searchTerm="">
+                </form>
+                        
+                <h1>Number of Records to Retrieve:</h1>
+                <div class="dropdown">
+                    <button class="btn col-md-12 dropdown-toggle" type="button" data-toggle="dropdown">&nbsp;</button>
+                    <ul class="dropdown-menu">
+                        <li><a value="value">1</a></li>
+                        <li><a value="value">5</a></li>
+                        <li><a value="value">10</a></li>
+                    </ul>
+                </div>
+                <button class="btn">Submit Dat</button>
+            </div>
+        </div>
+
+        <!--Articles-->
+        <div class="row">
+            <div id="articles" class="col-md-8 col-md-offset-2">
+                <div id="articleTitle">Top Articles</div>
+                <div id="articleList"><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
